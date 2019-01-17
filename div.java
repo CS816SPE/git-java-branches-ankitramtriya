@@ -10,6 +10,7 @@ class div_Main{
 
 	do{
 		System.out.print("1.ADD TWO NUmbers\n");
+		System.out.print("3.Multiply two numbers\n");
 		System.out.print("2.Exit\n");
 		System.out.print("Enter the choice:");
 		choice=scan.next().charAt(0);
@@ -21,6 +22,12 @@ class div_Main{
 						System.out.print("Result= "+res);
 						break;
 			case '2': System.exit(0);
+						break;
+			case '3': System.out.print("Enter the two numbers: ");
+						a=scan.nextFloat();
+						b=scan.nextFloat();
+						res = a*b;
+						System.out.print("Result= "+res);
 						break;
 			default: System.out.print("Invalid CHOICE!!!!");
 						break;
